@@ -1,0 +1,44 @@
+﻿@page
+@using MyLibrary
+@using MyLibrary.Model
+@model DuelSysWebsite.Pages.TournamentModel
+@{
+}
+
+              @{ var failbox = "";
+                  if (TempData.ContainsKey("DataAccesFail"))
+                  {
+                      failbox = TempData["DataAccesFail"] as string;
+                  }
+                  if (failbox != "")
+                  {
+                      <div>@failbox</div>
+                  } 
+              }
+@if(@Model.tournamentManager == null)
+{
+    return;
+}
+@if(@Model.tournamentManager.listOfTournaments != null)
+{
+    @foreach (Tournament t in @Model.tournamentManager.listOfTournaments)
+    {
+        <div class="tournament-container">
+            <div class = "box-tournament">
+
+                <h2>Tournament Name: @t.Name</h2>
+                <p>Venue: @t.Venue</p>
+                <p>Format of Elimination: @t.TournamentSystem</p>
+
+                <a asp-page="SelectedTournament"asp-route-id="@t.ID">
+                    <button class="selectButton" type="submit">View more information</button>
+                </a>
+ 
+            </div>
+            <hr class = "line">
+        </div>
+
+    }
+    return;
+}
+<h2 class="noTournaments">No tournaments available</h2>

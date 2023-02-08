@@ -1,0 +1,120 @@
+﻿@page "{id:int}"
+@using MyLibrary
+@using MyLibrary.Model
+@model DuelSysWebsite.Pages.SelectedTournamentModel
+@{
+
+}
+<form method="post">
+
+    @{
+}
+
+              @{ var failbox = "";
+                  if (TempData.ContainsKey("DataAccesFail"))
+                  {
+                      failbox = TempData["DataAccesFail"] as string;
+                  }
+                  if (failbox != "")
+                  {
+                      <div>@failbox</div>
+                  } 
+              }
+    @if(@Model.personManager == null)
+    {
+        return;
+    }
+    @if (@Model.selectedTournament.Status == true)
+    {
+        <div class="tournamentSelected-container">
+            <div class = "tournamentSelected-box">
+                <h2 class="tournamentSelected-items">Ranking</h2>
+
+                @foreach (Player p in @Model.personManager.GetRankingOfPlayersInTournament(@Model.selectedTournament.ID, @Model.personManager))
+                {
+                    <p> @p.Name</p>
+                }
+
+            </div>
+        </div>
+
+        <div class="tournamentSelected-container">
+            <div class = "tournamentSelected-box">
+                <h2 class="tournamentSelected-items">Match</h2>
+
+                <p>Player 1(S) - (S)Player 2  - Winner</p>
+
+                @foreach (Match m in @Model.tournamentManager.GetMatchBasedOnTournament(@Model.selectedTournament.ID))
+                {
+                    if (@m.Winner != null || @m.Player1Score != 0 || @m.Player1Score != 0)
+                    {
+                        <p>@m.Player1.Name (@m.Player1Score) - (@m.Player2Score) @m.Player2.Name - (@m.Winner.Name) </p>
+                    }
+                }
+
+            </div>
+        </div>
+    }
+
+    <div class = "tournamentSelected-container">
+        <div class = "tournamentSelected-box">
+            <h2 class="tournamentSelected-items">Selected Tournament</h2>
+
+            <p></p>
+
+            <p><b>Name</b>: @Model.selectedTournament.Name</p>
+            <p><b>Start Date</b>: @Model.selectedTournament.StartDate.ToString("dd-MMM-yyyy")</p>
+            <p><b>Type</b>: @Model.selectedTournament.TournamentSystem</p>
+            <p><b>Venue</b>: @Model.selectedTournament.Venue</p>
+            <p><b>Current Nr.players registered</b>: @Model.personManager.listOfPlayerInTournament.Count()</p>
+            <p><b>Max Nr.players registered</b>: @Model.selectedTournament.MaxNrOfPlayers</p>
+            <p><b>Description</b>: @Model.selectedTournament.Description</p>
+
+            @if (@Model.currentPlayer != null)
+            {
+                @if (!@Model.personManager.CheckIfPlayerHasAlreadyRegisterd(@Model.currentPlayer.Id))
+                {
+                    <p></p>
+                    <p style="color:black"><b>You have already registered</b></p>
+                    return;
+                }
+            }
+
+            @if(@Model.selectedTournament.Status == true)
+            {
+                @foreach (Match m in @Model.tournamentManager.GetMatchBasedOnTournament(@Model.selectedTournament.ID))
+                {
+                    if (@m.Winner == null)
+                    {
+                        <p><b>Registration</b>: Closed</p>
+                        <p><b>Status:</b> On going</p>
+                        return;
+                    }
+                }
+                <p><b>Status:</b> Ended</p>
+                return;
+            }
+
+            @if(!@Model.tournamentManager.CheckDaysToStartTournament(@Model.selectedTournament))
+            {
+                <p><b>Registration</b>: Closed</p>
+                return;
+            }
+
+            @if (!@Model.personManager.CheckIfRegistrationIsPossible(@Model.selectedTournament))
+            {
+                <p></p>
+                <p><b>Tournament Full</b></p>
+                return;
+            }
+
+            @if(@Model.currentPlayer == null)
+            {
+                return;
+            }
+            <button class="registerButton" type="submit" asp-page-handler="RegisterTournament">Register to Tournament</button>
+
+        </div>
+    </div>
+
+</form>

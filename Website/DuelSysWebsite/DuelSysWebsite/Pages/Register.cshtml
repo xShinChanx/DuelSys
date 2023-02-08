@@ -1,0 +1,53 @@
+﻿@page
+@model DuelSysWebsite.Pages.RegisterModel
+@{
+}
+
+<div class="loginForm">
+    <form method="post">
+        
+        <div class="RegisterYourAccount">Register Your Account</div>
+           
+        <span asp-validation-for="newPlayer.Name"></span>
+        <input class ="loginInput" type="text" asp-for="@Model.newPlayer.Name" placeholder="Name" >  
+
+        <span asp-validation-for="newPlayer.Email"></span>
+        <input class ="loginInput" type="text" asp-for="@Model.newPlayer.Email" placeholder="Email">
+
+        <span asp-validation-for="newPlayer.Phone"></span>
+        <input class ="loginInput" type="text" asp-for="@Model.newPlayer.Phone" placeholder="Phone">
+
+        <span asp-validation-for="newPlayer.Password"></span>
+        <input class ="loginInput" type="password" asp-for="@Model.newPlayer.Password" placeholder="Password" >
+
+        <span asp-validation-for="newPlayer.ConfirmPassword"></span>
+        <input class ="loginInput" type="password" asp-for="@Model.newPlayer.ConfirmPassword"  placeholder="Confirm Password">
+
+         @{ var registrationFail = "";
+            if (TempData.ContainsKey("RegistrationFail"))
+            {
+                registrationFail = TempData["RegistrationFail"] as string;
+            }
+            if (registrationFail != "")
+            {
+                <div>@registrationFail</div>
+            } 
+          }
+
+                        @{ var failbox = "";
+                  if (TempData.ContainsKey("DataAccesFail"))
+                  {
+                      failbox = TempData["DataAccesFail"] as string;
+                  }
+                  if (failbox != "")
+                  {
+                      <div>@failbox</div>
+                  } 
+              }
+            
+        <a  href="logIn">
+            <button class="registerButton" type="submit">Register</button>
+        </a>
+    </form>
+
+</div>

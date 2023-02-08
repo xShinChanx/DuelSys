@@ -1,0 +1,15 @@
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.deps.json
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.dll
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.pdb
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\bin\Release\net6.0\MyLibrary.dll
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\bin\Release\net6.0\MyLibrary.pdb
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.dll
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\obj\Release\net6.0\refint\DataAccessLayer.dll
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.pdb
+C:\Users\adels\Desktop\Ahem\Uni\Sem 2\Synthesis Assignment\duelsys\App\DuelSys.inc\DataAccessLayer\obj\Release\net6.0\ref\DataAccessLayer.dll

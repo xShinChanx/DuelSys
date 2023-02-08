@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["DuelSys"] - DuelSys</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CarRental.styles.css" asp-append-version="true" />
+</head>
+    <body>
+        <div class="menubar">
+            <div class="logo">DuelSys</div>
+            <a class="menuitem" asp-page="Index">Home</a>
+
+            <a class="menuitem" asp-page="Tournament">Tournaments</a>
+
+            @if(User.Identity.Name != null)
+            {
+                <a class="menuitem" asp-page="LogOut">LogOut</a>
+            }
+
+            @if (User.Identity.Name == null)
+            {
+                <a class="menuitem" asp-page="LogIn">Log In</a>
+            }
+
+        </div>
+
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+</html>

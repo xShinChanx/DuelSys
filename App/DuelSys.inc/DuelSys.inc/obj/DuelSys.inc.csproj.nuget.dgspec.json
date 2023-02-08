@@ -1,0 +1,194 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DuelSys.inc\\DuelSys.inc.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DataAccessLayer\\DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\adels\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\adels\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\MyLibrary\\MyLibrary.csproj": {
+                "projectPath": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\MyLibrary\\MyLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DuelSys.inc\\DuelSys.inc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DuelSys.inc\\DuelSys.inc.csproj",
+        "projectName": "DuelSys.inc",
+        "projectPath": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DuelSys.inc\\DuelSys.inc.csproj",
+        "packagesPath": "C:\\Users\\adels\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DuelSys.inc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\adels\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
+              "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\MyLibrary\\MyLibrary.csproj": {
+                "projectPath": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\MyLibrary\\MyLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\MyLibrary\\MyLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\MyLibrary\\MyLibrary.csproj",
+        "projectName": "MyLibrary",
+        "projectPath": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\MyLibrary\\MyLibrary.csproj",
+        "packagesPath": "C:\\Users\\adels\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adels\\Desktop\\Ahem\\Uni\\Sem 2\\Synthesis Assignment\\duelsys\\App\\DuelSys.inc\\MyLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\adels\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

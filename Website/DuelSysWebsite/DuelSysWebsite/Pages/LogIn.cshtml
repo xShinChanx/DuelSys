@@ -1,0 +1,55 @@
+﻿@page
+@model DuelSysWebsite.LogInModel
+@{
+}
+ <div class="loginForm">
+
+         <form method="post">
+
+            <div class="LoginToYourAccount">Login to your account</div>
+
+            <span asp-validation-for="playerLogin.Email"></span>
+            <input class ="loginInput" type="text" asp-for="@Model.playerLogin.Email" placeholder="Email">
+
+            <span asp-validation-for="playerLogin.Password"></span>
+            <input class ="loginInput" type="text" asp-for="@Model.playerLogin.Password" type="password" placeholder="Password">
+
+            <a>
+                <button class="loginButton" type="submit">LogIn</button>
+            </a>
+
+            <p></p>
+
+             @{ var successbox = "";
+                  if (TempData.ContainsKey("LogInFail"))
+                  {
+                      successbox = TempData["LogInFail"] as string;
+                  }
+                  if (successbox != "")
+                  {
+                      <div>@successbox</div>
+                  } 
+              }
+
+              @{ var failbox = "";
+                  if (TempData.ContainsKey("DataAccesFail"))
+                  {
+                      failbox = TempData["DataAccesFail"] as string;
+                  }
+                  if (failbox != "")
+                  {
+                      <div>@failbox</div>
+                  } 
+              }
+
+            <div class="loginFormLinks">
+                <a asp-page="Contact" class="loginFormLink">Forgot your password?</a>
+            </div>
+            
+            <a asp-page="Register">
+                <button class="loginButton" type="button">Register</button>
+            </a>
+
+        </form>
+
+    </div>
